@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+Here’s a template for your **README.md** file based on the details of your project and the instructions provided in the assignment:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# **Financial Tracker**
 
-In the project directory, you can run:
+### A React Web Application for Portfolio and Wishlist Stock Tracking
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Overview**
+**Financial Tracker** is a web application built using **React** that helps you monitor your **stock portfolio** and track the **wishlist stocks** you're considering investing in. The app fetches real-time stock data from the **Alpha Vantage API** to display key stock metrics, including price changes and historical stock trends.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project addresses the need for tracking stock portfolios efficiently by providing users with:
+- A **portfolio section** where they can view the percentage change in their stocks over the last 14 days and visualize stock trends through a graph.
+- A **wishlist section** that allows users to monitor the current price of the stocks they are interested in but haven’t invested in yet.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Features**
+- **Portfolio Stock Tracking**:
+  - Fetches the stock price data for a list of stocks in the user's portfolio.
+  - Displays the percentage price change for the last 14 days.
+  - Provides an interactive chart showing stock price trends for the last 14 days.
 
-### `npm run build`
+- **Wishlist Stock Monitoring**:
+  - Fetches and displays the current price for a set of stocks in the user's wishlist.
+  - Helps users stay informed on potential future investments.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Expense Tracking (Coming Soon)**:
+  - A section will be added soon that helps users track their monthly expenses through custom-built API integration.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## **How to Set Up the Project**
 
-### `npm run eject`
+### 1. Clone the Repository
+To get started, clone the project repository from GitHub:
+```bash
+git clone https://github.com/irfank123/FuelTheFIRE.git.git
+cd firetracker
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. Install Dependencies
+Run the following command to install the required dependencies:
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. Create an `.env` File
+You will need to set up an `.env` file in the root of the project directory to store your **Alpha Vantage API key**.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Create a file named `.env` and add the following line:
+```bash
+REACT_APP_ALPHA_VANTAGE_API_KEY=your_api_key_here
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Replace `your_api_key_here` with your actual API key from **Alpha Vantage**.
 
-## Learn More
+### 4. Run the Project
+Once the setup is complete, start the project with:
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## **API Integration**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project uses the **Alpha Vantage API** to fetch real-time stock market data. It integrates two endpoints:
 
-### Analyzing the Bundle Size
+- **TIME_SERIES_DAILY** for portfolio stocks to get the stock prices and percentage change over the last 14 days.
+- **TIME_SERIES_INTRADAY** for wishlist stocks to fetch the most recent stock price at 5-minute intervals.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+For more information on the API, visit the [Alpha Vantage API Documentation](https://www.alphavantage.co/documentation/).
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## **Credits**
 
-### Advanced Configuration
+This project was developed with the help of AI assistance using **ChatGPT** to:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Provide assistance with code structuring and optimization.
+- Help with the integration of the **Alpha Vantage API** for fetching stock data.
+- Implement the chart using **Chart.js** to visualize stock trends.
 
-### Deployment
+Proper documentation and instructions were crafted with the help of **AI** to ensure clarity and completeness.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Here’s an updated section for your **README.md** that explains how this application helps with percentage change tracking for a 14-day time period, which is often difficult to access from brokers:
+
+---
+
+## **Unique Benefits**
+
+One of the key features of this application is the ability to track the **percentage change** of the stocks you’ve invested in over the **last 14 days**. This feature provides a clear view of how your investments are performing over a shorter, custom time period—something that is not commonly available through most online brokers or financial platforms.
+
+### **Why Is This Important?**
+- **Customizable Time Period**: Most financial platforms or broker apps typically provide stock performance data over standard time intervals like 1 day, 1 week, 1 month, or longer. However, there is often no option to easily see how your investments are performing over a **14-day window**.
+  
+- **Better Short-Term Insights**: For investors who want to understand the short-term performance of their stocks, especially those who track trends or market movements on a **bi-weekly basis**, this feature becomes crucial. It helps investors make more informed decisions about whether to hold, sell, or increase their positions based on recent market trends.
+
+- **Unavailable from Brokers**: Many brokerage platforms do not offer an easily accessible or customizable view of **percentage changes** over non-standard time periods (like 14 days). This app fills that gap by calculating and displaying these changes automatically, so you can quickly see how much your investments have appreciated or depreciated in the last two weeks.
+
+--- 
+
+## **Upcoming Features**
+- **Monthly Expense Tracking**: A feature will be added to allow users to monitor their monthly expenses by scraping their transaction data and aggregating totals.
