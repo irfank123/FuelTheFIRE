@@ -1,19 +1,3 @@
-
-
-// import React from 'react';
-// import Portfolio from './Portfolio';
-// import Investments from './Investments';
-
-// function App() {
-//   return (
-//     <div class>
-//       <Portfolio />
-//       <Investments />
-//     </div>
-//   );
-// }
-
-// export default App;
 import React from 'react';
 import Portfolio from './Portfolio';
 import Investments from './Investments';

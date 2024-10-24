@@ -23,7 +23,7 @@ function Investments() {
             const lastPrice = parseFloat(timeSeries[mostRecentTime]['4. close']);  // Most recent closing price
 
             wishlistResults[stock] = {
-              price: lastPrice.toFixed(2),  // Save the most recent price
+              price: lastPrice.toFixed(2),  //saves the most recent price
             };
           }
         } catch (error) {
@@ -41,7 +41,7 @@ function Investments() {
     <div>
       <h2>Wishlist Stocks</h2>
       {error && <p>{error}</p>}
-      {/* List of wishlist stocks with current price */}
+      {/*Displays the list of stocks with current price */}
       <ul>
         {wishlistStocks.map(stock => (
           <li key={stock}>
