@@ -1,8 +1,4 @@
-Here’s a template for your **README.md** file based on the details of your project and the instructions provided in the assignment:
-
----
-
-# **Financial Tracker**
+# **FuelTheFire**
 
 ### A React Web Application for Portfolio and Wishlist Stock Tracking
 
