@@ -87,10 +87,6 @@ Proper documentation and instructions were crafted with the help of **AI** to en
 ---
 
 
-Here’s an updated section for your **README.md** that explains how this application helps with percentage change tracking for a 14-day time period, which is often difficult to access from brokers:
-
----
-
 ## **Unique Benefits**
 
 One of the key features of this application is the ability to track the **percentage change** of the stocks you’ve invested in over the **last 14 days**. This feature provides a clear view of how your investments are performing over a shorter, custom time period—something that is not commonly available through most online brokers or financial platforms.
