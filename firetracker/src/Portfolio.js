@@ -126,7 +126,7 @@ function Portfolio() {
   return (
     <div>
       <h2>Portfolio</h2>
-      <p>Click on any stock below to see its price graph for the last 14 days.</p> 
+      <p>Click on any stock below to see its price graph for the last 14 days. smart boy</p> 
       <ul>
         {stocks.map(stock => (
           <li key={stock} onClick={() => handleStockClick(stock)} style={{ cursor: 'pointer' }}>
